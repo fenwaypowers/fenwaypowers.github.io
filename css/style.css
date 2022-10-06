@@ -3,9 +3,24 @@ body{
     margin: auto;
     border: 1px solid white;
     padding: 10px;
+    background-color: #383838;
+    color: #E8E8E8;
 }
 
 nav a{
     padding: 5px;
 
+}
+
+a {   
+    color: #26A1FF;   
+}
+
+a:active {
+    color: blue;
+}
+
+a[tabindex]:focus {
+    color:blue;
+    outline: none;
 }
