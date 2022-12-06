@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>Pyterm Virtual Terminal For Use With Old Serial Terminals</title>
+  
+  <link href="/css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>>
+    <a href="/about">About Me</a>>
+    <a href="/blog">Blog</a>>
+    <a href="/contact">Contact</a>>
+  </nav>
+  <hr>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  Pyterm Virtual Terminal For Use With Old Serial Terminals
+</h1>
+<p class="subtitle"><strong>2022-12-05</strong></p>
+<h2 id="preface"><div align="center"><b>Preface</a></div></h2>
+<p>As of the time I'm writing this blog post, I have been elected as next semester's Junior Tech Director at the <a href="https://cif.rochester.edu/">Computer Interest Floor</a> at the University of Rochester. The club is a great place for people of all majors to interact, and one of my favorite perks of being a member is access to the lab. While at the lab, I took interest in an old serial terminal that was used to control the old sound system. Specifically, the model is the Wyse WY50. Old technology piques my interest greatly, so I made it my goal to run a modern Linux terminal on the WY50.</p>
+<h2 id="research"><div align="center"><b>Research</a></div></h2>
+<p>The first thing I found concerning this subject was <a href="https://youtu.be/xQTr9ZOJkC0">this YouTube video</a> by <a href="https://www.youtube.com/@VeronicaExplains">Veronica Explains</a>. The Video was great and explained everything very well, but the terminal used in the video was a Wyse WY55, not the Wyse WY50. An important piece of information gained from this video is that the WY55 can emulate a VT-100 terminal, but the WY50 cannot. This means that the WY50 will take some more effort to connect to Linux, since the VT-100 seems to have become somwhat of a standard or base for modern terminals.</p>
+<p>Thanks to <a href="https://qmacro.org/blog/posts/2012/07/15/serial-interest-in-the-raspberry-pi/">this post</a> by <a href="https://qmacro.org/">DJ Adams</a>, I was able to learn about agetty and ncurses-term. Agetty is a much better alternative to the serial-getty systemctl service. Ncurses-term contains the proper escape codes for all of the different terminals, including the WY50.</p>
+<h2 id="how-to-connect"><div align="center"><b>How to Connect</a></div></h2>
+
+
+    </div>
+  </section>
+  <hr>
+  <footer>&copy Fenway Powers Copyright 2022-2023</footer>
+</body>
+</html>

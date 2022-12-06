@@ -10,16 +10,12 @@
         <loc>https://fenwaypowers.github.io/blog/</loc>
     </url>
     <url>
-        <loc>https://fenwaypowers.github.io/blog/alice/</loc>
-        <lastmod>2022-10-05</lastmod>
-    </url>
-    <url>
-        <loc>https://fenwaypowers.github.io/blog/cargoforc/</loc>
-        <lastmod>2022-10-05</lastmod>
-    </url>
-    <url>
         <loc>https://fenwaypowers.github.io/blog/landmusic/</loc>
         <lastmod>2022-10-05</lastmod>
+    </url>
+    <url>
+        <loc>https://fenwaypowers.github.io/blog/pyterm/</loc>
+        <lastmod>2022-12-05</lastmod>
     </url>
     <url>
         <loc>https://fenwaypowers.github.io/contact/</loc>
