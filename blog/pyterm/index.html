@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Pyterm Virtual Terminal For Use With Old Serial Terminals</title>
   
@@ -10,11 +11,11 @@
 </head>
 
 <body>
+  <div class="container">
   <nav>
-    <a href="/">Home</a>>
-    <a href="/about">About Me</a>>
-    <a href="/blog">Blog</a>>
-    <a href="/contact">Contact</a>>
+    <a href="/">Home</a> |
+    <a href="/blog">Blog</a> |
+    <a href="/contact">Contact</a>
   </nav>
   <hr>
   <section class="section">
@@ -29,12 +30,28 @@
 <h2 id="research"><div align="center"><b>Research</a></div></h2>
 <p>The first thing I found concerning this subject was <a href="https://youtu.be/xQTr9ZOJkC0">this YouTube video</a> by <a href="https://www.youtube.com/@VeronicaExplains">Veronica Explains</a>. The Video was great and explained everything very well, but the terminal used in the video was a Wyse WY55, not the Wyse WY50. An important piece of information gained from this video is that the WY55 can emulate a VT-100 terminal, but the WY50 cannot. This means that the WY50 will take some more effort to connect to Linux, since the VT-100 seems to have become somwhat of a standard or base for modern terminals.</p>
 <p>Thanks to <a href="https://qmacro.org/blog/posts/2012/07/15/serial-interest-in-the-raspberry-pi/">this post</a> by <a href="https://qmacro.org/">DJ Adams</a>, I was able to learn about agetty and ncurses-term. Agetty is a much better alternative to the serial-getty systemctl service. Ncurses-term contains the proper escape codes for all of the different terminals, including the WY50.</p>
+<h2 id="prerequisites"><div align="center"><b>Prerequisites</a></div></h2>
+<p>You will need a null modem cable to connect to your terminal. You will also need a USB to serial adapter to connect to your computer. </p>
+<div style="display: flex; justify-content: center;">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <p>Null Modem Cable</p>
+        <img src="https://cdn.discordapp.com/attachments/798075108853809163/1089279359891820624/51O8cNGIaTS._SL1200_.jpg" alt="Fenway Powers" width="200" height="200" class="rounded" style="margin-right: 10px; margin-left: 0px;">
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <p>Serial to USB</p>
+        <img src="https://cdn.discordapp.com/attachments/798075108853809163/1089281390622802070/41DRc0ZPvL._AC_.jpg" alt="Fenway Powers" width="200" height="200" class="rounded" style="margin-right: 0px; margin-left: 10px;">
+    </div>
+</div>
+<p>Then, you will need to download pyterm. The repository is linked <a href="https://github.com/fenwaypowers/pyterm" target="_blank">here</a>. Alternatively, the individual <code>pyterm.py</code> file can be downloaded <a href="https://raw.githubusercontent.com/fenwaypowers/pyterm/main/pyterm.py" target="_blank">here</a> (right click the page and &quot;Save Page As...&quot;). Also, make sure you have <code>agetty</code> and <code>ncurses-term</code> (<code>sudo apt install ncurses-term</code>).</p>
 <h2 id="how-to-connect"><div align="center"><b>How to Connect</a></div></h2>
+<p>In your terminal, type <code>ls /dev/*USB*</code>. You should see something like <code>/dev/ttyUSB0</code> as an output. If there's no output, then your terminal is not connected to your computer. Then, type <code>agetty -L ttyUSB0 19200 wy50</code>. This will connect to the terminal using the <code>wy50</code> escape codes and <code>19200</code> as a buad rate. Make sure these are the current settings in your terminal!</p>
+<p>Then once you're connected, you may notice visual glitches. Just make sure you have <code>pyterm.py</code> downloaded and enter <code>python3 pyterm.py</code>. Now you should be in the virtual terminal!</p>
 
 
     </div>
   </section>
   <hr>
-  <footer>&copy Fenway Powers Copyright 2022-2023</footer>
+  <footer>&copy Copyright 2022-2023 Fenway Powers</footer>
+  </div>
 </body>
 </html>
