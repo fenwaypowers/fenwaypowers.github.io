@@ -1,0 +1,14 @@
+.bandcamp-embed {
+    width: 350px;
+    height: 468px;
+}
+
+@media (max-width: 768px) {
+    .roundedsquarephoto {
+        width: 150px;
+        height: 150px;
+        border-radius: 10%;
+        -webkit-border-radius: 10%;
+        -moz-border-radius: 10%;
+    }
+}

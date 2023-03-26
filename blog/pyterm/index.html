@@ -7,16 +7,22 @@
   
   <title>Pyterm Virtual Terminal For Use With Old Serial Terminals</title>
   
-  <link href="/css/style.css" rel="stylesheet"/>
+
+  <link href="/css/light.css" rel="stylesheet"/>
+  <link href="/css/bandcamp.css" rel="stylesheet" />
+
 </head>
 
 <body>
   <div class="container">
-  <nav>
-    <a href="/">Home</a> |
-    <a href="/blog">Blog</a> |
-    <a href="/contact">Contact</a>
-  </nav>
+<nav>
+  <div>
+  <a href="/">Home</a> |
+  <a href="/blog">Blog</a> |
+  <a href="/contact">Contact</a> |
+  </div>
+</nav>
+
   <hr>
   <section class="section">
     <div class="container">
@@ -35,14 +41,14 @@
 <div style="display: flex; justify-content: center;">
     <div style="display: flex; flex-direction: column; align-items: center;">
         <p>Null Modem Cable</p>
-        <img src="https://cdn.discordapp.com/attachments/798075108853809163/1089279359891820624/51O8cNGIaTS._SL1200_.jpg" alt="Fenway Powers" width="200" height="200" class="rounded" style="margin-right: 10px; margin-left: 0px;">
+        <img src="https://cdn.discordapp.com/attachments/798075108853809163/1089279359891820624/51O8cNGIaTS._SL1200_.jpg" alt="nullmodemcable" class="roundedsquarephoto" style="margin-right: 10px; margin-left: 0px;">
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
         <p>Serial to USB</p>
-        <img src="https://cdn.discordapp.com/attachments/798075108853809163/1089281390622802070/41DRc0ZPvL._AC_.jpg" alt="Fenway Powers" width="200" height="200" class="rounded" style="margin-right: 0px; margin-left: 10px;">
+        <img src="https://cdn.discordapp.com/attachments/798075108853809163/1089281390622802070/41DRc0ZPvL._AC_.jpg" alt="serialtousb" class="roundedsquarephoto" style="margin-right: 0px; margin-left: 10px;">
     </div>
 </div>
-<p>Then, you will need to download pyterm. The repository is linked <a href="https://github.com/fenwaypowers/pyterm" target="_blank">here</a>. Alternatively, the individual <code>pyterm.py</code> file can be downloaded <a href="https://raw.githubusercontent.com/fenwaypowers/pyterm/main/pyterm.py" target="_blank">here</a> (right click the page and &quot;Save Page As...&quot;). Also, make sure you have <code>agetty</code> and <code>ncurses-term</code> (<code>sudo apt install ncurses-term</code>).</p>
+<p>Then, you will need to download pyterm. The repository is linked <a href="https://github.com/fenwaypowers/pyterm" target="_blank">here</a>. Alternatively, the individual <code>pyterm.py</code> file can be downloaded <a href="https://raw.githubusercontent.com/fenwaypowers/pyterm/main/pyterm.py" target="_blank">here</a> (right click the page and &quot;Save Page As...&quot;). Also, make sure you have <code>agetty</code> and <code>ncurses-term</code> (<code>sudo apt install ncurses-term</code> for Ubuntu users).</p>
 <h2 id="how-to-connect"><div align="center"><b>How to Connect</a></div></h2>
 <p>In your terminal, type <code>ls /dev/*USB*</code>. You should see something like <code>/dev/ttyUSB0</code> as an output. If there's no output, then your terminal is not connected to your computer. Then, type <code>agetty -L ttyUSB0 19200 wy50</code>. This will connect to the terminal using the <code>wy50</code> escape codes and <code>19200</code> as a buad rate. Make sure these are the current settings in your terminal!</p>
 <p>Then once you're connected, you may notice visual glitches. Just make sure you have <code>pyterm.py</code> downloaded and enter <code>python3 pyterm.py</code>. Now you should be in the virtual terminal!</p>
@@ -51,7 +57,11 @@
     </div>
   </section>
   <hr>
-  <footer>&copy Copyright 2022-2023 Fenway Powers</footer>
+  <footer>
+    <div style="float:left; margin-right:10px ;">
+      &copy Copyright 2022-2023 Fenway Powers
+    </div>
+  </footer>
   </div>
 </body>
 </html>

@@ -1,0 +1,289 @@
+/*! Dark reader generated CSS | Licensed under MIT https://github.com/darkreader/darkreader/blob/main/LICENSE */
+
+/* User-Agent Style */
+html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark light !important;
+}
+html, body {
+    background-color: #181a1b;
+}
+html, body {
+    border-color: #b1aaa0;
+    color: #e8e6e3;
+}
+a {
+    color: #4060bf;
+}
+table {
+    border-color: #788287;
+}
+::placeholder {
+    color: #596064;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #5a6107 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #232527;
+    color: #a39b8f;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #535a5e;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6c7579;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #a39b8f;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #535a5e #232527;
+}
+::selection {
+    background-color: #638cbf !important;
+    color: #181a1b !important;
+}
+::-moz-selection {
+    background-color: #638cbf !important;
+    color: #181a1b !important;
+}
+
+/* Invert Style */
+.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: null !important;
+}
+
+/* Variables Style */
+:root {
+   --darkreader-neutral-background: #d6d2cd;
+   --darkreader-neutral-text: #2b2f31;
+   --darkreader-selection-background: #638cbf;
+   --darkreader-selection-text: #181a1b;
+}
+
+/* Modified CSS */
+html {
+    background-color: rgb(214, 210, 205) !important;
+}
+html,
+body,
+input,
+textarea,
+select,
+dialog {
+    background-color: rgb(214, 210, 205);
+}
+html,
+body,
+input,
+textarea,
+select,
+
+a {
+    color: rgb(43, 102, 171);
+}
+table {
+    border-color: rgb(168, 160, 149);
+}
+::placeholder {
+    color: rgb(88, 96, 99);
+}
+input:autofill,
+textarea:autofill,
+select:autofill {
+    background-color: rgb(207, 203, 197) !important;
+    color: rgb(43, 47, 49) !important;
+}
+::-webkit-scrollbar {
+    background-color: rgb(207, 203, 197);
+    color: rgb(94, 102, 106);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 173, 163);
+}
+::-webkit-scrollbar-corner {
+    background-color: rgb(214, 210, 205);
+}
+::selection {
+    background-color: rgb(130, 159, 193) !important;
+    color: rgb(43, 47, 49) !important;
+}
+::selection {
+    background-color: rgb(130, 159, 193) !important;
+    color: rgb(43, 47, 49) !important;
+}
+:root {
+    --darkreader-bg--darkreader-neutral-background: #d9d6d1;
+    --darkreader-text--darkreader-neutral-text: #393d40;
+    --darkreader-selection-background: #004daa;
+    --darkreader-selection-text: #e8e6e3;
+}
+nav {
+    color:rgb(56, 61, 63)
+}
+body {
+    background-color: rgb(224, 222, 218);
+    color: rgb(56, 61, 63);
+    line-height: 1.8;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(214, 211, 205);
+}
+
+.button2 {
+    background-color: #e8e6e3;
+    color: #000000;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button2:hover {
+    background-color: rgb(116, 116, 116);
+    color: #000000;
+}
+
+.roundedsquarephoto {
+    width: 225px;
+    height: 225px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(42, 117, 171);
+}
+a:active {
+    color: rgb(43, 89, 171);
+}
+a[tabindex]:focus {
+    color: rgb(43, 89, 171);
+    outline-color: currentcolor;
+}
+.vimvixen-hint {
+    background-color: rgb(198, 187, 162) !important;
+    border-color: rgb(191, 168, 80) !important;
+    color: rgb(98, 74, 7) !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-text--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: rgb(201, 196, 189) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-bg--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: rgb(216, 213, 208) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: rgb(225, 222, 218) !important;
+}
+.tou-uknfeu {
+    background-color: rgb(218, 215, 210) !important;
+}
+.tou-6i3zyv {
+    background-color: rgb(156, 186, 197) !important;
+}
+
+/* Override Style */
+.vimvixen-hint {
+    background-color: #ffd76e !important;
+    border-color: #c59d00 !important;
+    color: #302505 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #add8e6 !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: #cfecf5 !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: #f5f5f5 !important;
+}
+.tou-uknfeu {
+    background-color: #faedda !important;
+}
+.tou-6i3zyv {
+    background-color: #85c3d8 !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }
