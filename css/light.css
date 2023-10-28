@@ -166,6 +166,14 @@ body {
     -moz-border-radius: 10%;
 }
 
+.mediumroundedsquarephoto {
+    width: 550px;
+    height: 550px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+}
+
 a {
     text-decoration: none;
     color: rgb(42, 117, 171);

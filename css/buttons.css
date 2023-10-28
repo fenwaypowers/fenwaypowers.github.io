@@ -1,18 +1,4 @@
-.button2 {
-    background-color: rgb(23, 25, 26);
-    color: #000000;
-    border: 1px solid rgb(255, 0, 0);
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-size: 14px;
-    cursor: pointer;
-    text-decoration: none;
-}
 
-.button2:hover {
-    background-color: rgb(116, 116, 116);
-    color: #000000;
-}
 
 
 /*<input type="checkbox" id="switch"><label for="switch"></label>*/

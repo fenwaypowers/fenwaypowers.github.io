@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Project GateKeeper - How I Programmed a Door</title>
+  
+
+  <link href="/css/light.css" rel="stylesheet"/>
+  <link href="/css/bandcamp.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="container">
+<nav>
+  <div>
+  <a href="/">Home</a> |
+  <a href="/blog">Blog</a> |
+  <a href="/contact">Contact</a> |
+  </div>
+</nav>
+
+  <hr>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  Project GateKeeper - How I Programmed a Door
+</h1>
+<p class="subtitle"><strong>2023-10-28</strong></p>
+<p>I know that the title doesn't make this blog sound very exciting, but trust me: it's pretty neat! As of writing this post, I am now one of two co-presidents of the Computer Interest Floor (CIF) at the University of Rochester. CIF is a special interest housing organization for students that have interests in computers, programming, engineering, digital media, video games, and more!</p>
+<p>CIF has a computer lab which floor members and other lab members can access by swiping their student ID cards at the entrance. However, in the beginning of the Fall 2023 semester, the system stopped working. The system was quite old and there was evidence that parts of it had broken in the past, with only temporary fixes being applied as opposed to permanent ones.</p>
+<div style="display: flex; justify-content: center;">
+	<div style="display: flex; flex-direction: column; align-items: center;">
+    	<p>Original Card Reader System</p>
+    	<img src="/IMG_1872.jpg" alt="Original Card Reader System" class="mediumroundedsquarephoto" style="margin-right: 10px; margin-left: 0px;">
+	</div>
+</div>
+<p>An option given to us was to rely on the university for handling our card swipe system. However, CIF's board did not approve of this idea, instead opting to build our own system to maintain full access to our lab. That's where project <a href="https://github.com/CIF-Rochester/GateKeeper">GateKeeper</a> comes in! Because CIF's program <a href="https://github.com/CIF-Rochester/CerberusAccessControl">Cerberus</a> was made for the old system, we decided to make a new program for handling swipes entirely from scratch using Python. Python was chosen for its ease of use, readability, and its extensive modules.</p>
+<h2 id="the-program">The Program</h2>
+<p>GateKeeper needs to do three things:</p>
+<ul>
+<li><code>Swipe</code>: Get the unique 8-digit ID number from a swiped ID card as well as the 2 digit LCC number.</li>
+<li><code>Account</code>: Check with CIF's IPA server (where we store lab member accounts) to see if the account associated with the swiped ID should be given access.</li>
+<li><code>Strike</code>: If the ID has proper credentials in our IPA server, unlock the door with the door <code>strike</code>.</li>
+</ul>
+<p>The more technical details for these modules can be found on the Github repository's <a href="https://github.com/CIF-Rochester/GateKeeper#classes">readme</a>.</p>
+<h2 id="the-first-prototype">The First Prototype</h2>
+<p>Once GateKeeper was in a testable state, my good friend and fellow CIF board member Jack Andersen and I put together the first prototype. Here's what we used:</p>
+<ul>
+<li>Raspberry Pi running Ubuntu Server 20.04 LTS</li>
+<li>Arduino Uno</li>
+<li>Breadboard and wires</li>
+<li>IRFZ44N IRFZ44 N-Channel MOSFET Transistor</li>
+<li>MODEL:ET-MSR90 ETEKJOY card reader</li>
+</ul>
+<p>The &quot;strike&quot; (the thing that actually unlocks the door) requires 12V to activate. Our initial challenge was being able to programmatically send a signal from an Arduino or Raspberry Pi that could activate 12V. This was especially tricky because these devices can only send up to 5V. My good friend Alex Saunders, an engineering student at the University of Rochester, advised us to use a transistor to be able to let the 12V from an external power supply flow to the door strike. We accomplished this by referring to this diagram:</p>
+<div style="display: flex; justify-content: center;">
+	<div style="display: flex; flex-direction: column; align-items: center;">
+    	<img src="/arduino_diagram.png" alt="Circuit Diagram" style="margin-right: 10px; margin-left: 0px;">
+	</div>
+</div>
+<div style="display: flex; justify-content: center;">
+	<div style="display: flex; flex-direction: column; align-items: center;">
+    <p>And here's a video of the very first prototype working!</p>
+	<video width="" height="320" controls>
+    	<source src="/IMG_1932.mp4" type="video/mp4" alt="Video of the first prototype">
+	</video>
+	</div>
+</div>
+<p></p>
+<div style="display: flex; justify-content: center;">
+	<div style="display: flex; flex-direction: column; align-items: center;">
+    	<p>Image of the first prototype</p>
+    	<img src="/IMG_1934.jpg" alt="Image of the first prototype" class="mediumroundedsquarephoto" style="margin-right: 10px; margin-left: 0px;">
+	</div>
+</div>
+<p>After this success, Jack implemented the code for using the Raspberry Pi's GPIO pins for striking the door. We then worked together to create a more permanent fixture on the wall for the working prototype:</p>
+<div style="display: flex; justify-content: center;">
+	<div style="display: flex; flex-direction: column; align-items: center;">
+    	<img src="/IMG_1940.jpg" alt="Image of the second prototype" class="mediumroundedsquarephoto" style="margin-right: 10px; margin-left: 0px;">
+	</div>
+</div>
+<p>Of course, this is still <strong>just</strong> a working prototype, and we are continuing our efforts to create a permanent fixture that covers up the hole in the wall, has the connections soldered, and also locks the Raspberry Pi so no malicious actors can access it. Check back later for more progress on this developing project!</p>
+<h2 id="credits">Credits</h2>
+<h3 id="programming">Programming</h3>
+<ul>
+<li>Fenway Powers '25</li>
+<li>Jack Andersen '25</li>
+<li>Craig McIlwrath '24</li>
+</ul>
+<h3 id="prototyping">Prototyping</h3>
+<ul>
+<li>Fenway Powers '25</li>
+<li>Jack Andersen '25</li>
+</ul>
+<h3 id="consultation">Consultation</h3>
+<ul>
+<li>Alex Saunders '25</li>
+</ul>
+
+
+    </div>
+  </section>
+  <hr>
+  <footer>
+    <div align="center">
+      &copy Copyright 2022-2023 Fenway Powers
+    </div>
+  </footer>
+  </div>
+</body>
+</html>
